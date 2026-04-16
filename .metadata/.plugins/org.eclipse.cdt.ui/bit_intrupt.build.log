@@ -1,0 +1,10 @@
+11:58:27 **** Incremental Build of configuration Debug for project bit_intrupt ****
+make -j4 all 
+arm-none-eabi-size  bit_intrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6180	     12	   1572	   7764	   1e54	bit_intrupt.elf
+Finished building: default.size.stdout
+ 
+
+11:58:28 Build Finished. 0 errors, 0 warnings. (took 754ms)
+

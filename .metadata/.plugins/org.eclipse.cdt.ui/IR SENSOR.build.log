@@ -1,0 +1,10 @@
+11:58:17 **** Incremental Build of configuration Debug for project IR SENSOR ****
+make -j4 all 
+arm-none-eabi-size  IR\ SENSOR.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8588	     12	   1644	  10244	   2804	IR SENSOR.elf
+Finished building: default.size.stdout
+ 
+
+11:58:18 Build Finished. 0 errors, 0 warnings. (took 764ms)
+

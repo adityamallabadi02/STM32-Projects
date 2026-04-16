@@ -1,0 +1,10 @@
+11:58:23 **** Incremental Build of configuration Debug for project UART_RECIVIER ****
+make -j4 all 
+arm-none-eabi-size  UART_RECIVIER.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8896	     12	   1644	  10552	   2938	UART_RECIVIER.elf
+Finished building: default.size.stdout
+ 
+
+11:58:24 Build Finished. 0 errors, 0 warnings. (took 709ms)
+

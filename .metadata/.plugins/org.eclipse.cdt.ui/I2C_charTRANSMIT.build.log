@@ -1,0 +1,18 @@
+12:00:20 **** Incremental Build of configuration Debug for project I2C_charTRANSMIT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:70:26: error: invalid initializer
+   70 | uint8_t tx_data1[SIZE] = 'A';
+      |                          ^~~
+../Core/Src/main.c:73:1: error: unknown type name 'uint8_t_'; did you mean 'uint8_t'?
+   73 | uint8_t_ tx_data[SIZE] = "OK";
+      | ^~~~~~~~
+      | uint8_t
+../Core/Src/main.c:73:26: error: array of inappropriate type initialized from string constant
+   73 | uint8_t_ tx_data[SIZE] = "OK";
+      |                          ^~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+12:00:21 Build Failed. 4 errors, 0 warnings. (took 1s.156ms)
+

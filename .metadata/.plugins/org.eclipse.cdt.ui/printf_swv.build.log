@@ -1,0 +1,10 @@
+11:58:34 **** Incremental Build of configuration Debug for project printf_swv ****
+make -j4 all 
+arm-none-eabi-size  printf_swv.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9288	    104	   1912	  11304	   2c28	printf_swv.elf
+Finished building: default.size.stdout
+ 
+
+11:58:35 Build Finished. 0 errors, 0 warnings. (took 894ms)
+
